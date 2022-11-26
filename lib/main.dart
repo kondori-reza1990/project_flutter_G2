@@ -11,6 +11,7 @@ class SecondPage extends StatefulWidget {
 
 class _SecondPageState extends State<SecondPage> {
   String text = "My First Project in FLUTTER";
+  double fontSize = 38;
 
   @override
   Widget build(BuildContext context) {
@@ -19,12 +20,16 @@ class _SecondPageState extends State<SecondPage> {
         body: SafeArea(
           child: Column(
             children: [
-              FlutterLogo(
-                size: 250,
+              Image.asset(
+              "assets/images/image1.png"
               ),
               Text(
                 "Title",
-                style: TextStyle(fontSize: 38, fontWeight: FontWeight.bold),
+                style: TextStyle(
+                    fontSize: fontSize,
+                    fontFamily: "titleFont",
+                    fontWeight: FontWeight.bold
+                ),
               ),
               Expanded(
                   child: Container(
