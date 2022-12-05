@@ -25,7 +25,7 @@ class _AddCardState extends State<AddCard> {
             alignment: Alignment.bottomCenter,
             child: Container(
               height: h * 3 / 4,
-              padding: EdgeInsets.fromLTRB(20, 90, 20, 20),
+              padding: const EdgeInsets.fromLTRB(20, 90, 20, 20),
               decoration: const BoxDecoration(
                   color: Colors.white,
                 borderRadius: BorderRadius.vertical(
@@ -35,7 +35,7 @@ class _AddCardState extends State<AddCard> {
               child: SingleChildScrollView(
                 child: Column(
                   children: [
-                    TextField(
+                    const TextField(
                       decoration: InputDecoration(
                         labelText: "Card Number",
                         prefixIcon: Icon(Icons.credit_card),
@@ -43,7 +43,7 @@ class _AddCardState extends State<AddCard> {
                     ),
                     Row(
                       mainAxisSize: MainAxisSize.min,
-                      children: [
+                      children: const [
                         Expanded(
                           flex: 2,
                           child: TextField(
@@ -64,7 +64,7 @@ class _AddCardState extends State<AddCard> {
                         ),
                       ],
                     ),
-                    TextField(
+                    const TextField(
                       decoration: InputDecoration(
                         labelText: "Name",
                         prefixIcon: Icon(Icons.person),
